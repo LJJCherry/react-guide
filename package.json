@@ -1,0 +1,30 @@
+{
+  "name": "react-comp-guide",
+  "version": "1.0.0",
+  "description": "B端引导组件",
+  "main": "lib/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist",
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "father build"
+  },
+  "author": "ljj",
+  "keywords": ["react-guide"],
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": ">=15.6.2",
+    "react-dom": ">=15.4.1",
+    "antd": ">=2.11.2"
+  },
+  "devDependencies": {
+    "father": "^2.18.3"
+  },
+}

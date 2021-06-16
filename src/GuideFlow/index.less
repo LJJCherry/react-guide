@@ -1,0 +1,40 @@
+.guide-flow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  &.guide-hide {
+    display: none;
+  }
+  &.guide-show {
+    display: block;
+  }
+  .guide-flow-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background: rgba(0,0,0,0.20);
+  }
+  .guide-border {
+    position: absolute;
+    z-index: 99998;
+    border-radius: 4px;
+    opacity: 1;
+    background-color: white;
+    transition: all .3s ease-out;
+  }
+  .guide-box-shadow-border {
+    position: absolute;
+    box-shadow: rgba(0,0,0,.6) 0 0 0 100vw;
+    border-radius: 4px;
+  }
+}
+.show-guide {
+  z-index: 99999 !important;
+  position: relative;
+}

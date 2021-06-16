@@ -1,0 +1,214 @@
+@theme-color: #2a8df9;
+.lark-guide-tooltip {
+  display: flex;
+  position: absolute;   
+  z-index: 999999;
+  opacity: 0.9;
+  padding: 16px 20px;
+  background: @theme-color;
+  border-radius: 5px;
+  min-width: 295px;
+  box-shadow: 0 15px 24px 0 rgba(119,189,253,0.39);
+  color: #fff;
+  &.guide-hide {
+    display: none;
+  }
+  &.guide-show {
+    display: block;
+  }
+  .guide-flow-content-container {
+    min-width: 260px;
+    max-width: 300px; // 大约20个中文字符开始折行
+    .title {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .guide-content {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 16px;
+    }
+    .content-bottom {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      .guide-next-btn {
+        background: #fff;
+        border-radius: 2px;
+        color: #1890ff;
+        &:hover {
+          opacity: 0.85;
+        }
+      }
+      .guide-next-pass {
+        margin-right: -20px;
+      }
+      .guide-btn {
+        cursor: pointer;
+        display: inline-block;
+        height: 24px;
+        width: 60px;
+        text-align: center;
+        line-height: 24px;
+        font-size: 12px;
+      }
+      .guide-page-info {
+        .guide-page {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .guide-page-total {
+          font-size: 12px;
+          color: #9dc8ff;
+        }
+      }
+    }
+  }
+  // guide-arrow
+  .guide-arrow {
+    width: 15px;
+    height: 15px;
+    background: @theme-color;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  // style with Icon Tip
+  &.guide-tip-with-img {
+    img {
+      width: 32px;
+      height: 31px;
+    } 
+    .guide-img-wrap {
+      margin-right: 11px;
+    }
+  }
+  &.guide-tooltip-rightTop {
+    .guide-tip-pulsating-circle {
+      left: -32px;
+      top: 24px;
+    }
+    .guide-arrow {
+      left: -7px;
+      top: 24px;
+    }
+  }
+  &.guide-tooltip-right {
+    .guide-tip-pulsating-circle {
+      left: -32px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .guide-arrow {
+      left: -7px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+  &.guide-tooltip-rightBottom {
+    .guide-tip-pulsating-circle {
+      left: -32px;
+      bottom: 24px;
+    }
+    .guide-arrow {
+      left: -7px;
+      bottom: 24px;
+    }
+  }
+  &.guide-tooltip-leftTop {
+    .guide-tip-pulsating-circle {
+      right: -32px;
+      top: 20px;
+    }
+    .guide-arrow {
+      right: -8px;
+      top: 20px;
+    }
+  }
+  &.guide-tooltip-leftBottom {
+    .guide-tip-pulsating-circle {
+      right: -32px;
+      bottom: 24px;
+    }
+    .guide-arrow {
+      right: -8px;
+      bottom: 24px;
+    }
+  }
+  &.guide-tooltip-left {
+    .guide-tip-pulsating-circle {
+      right: -32px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .guide-arrow {
+      right: -8px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+  &.guide-tooltip-top {
+    .guide-tip-pulsating-circle {
+      bottom: -32px;
+      right: 50%;
+      transform: translateX(-50%);
+    }
+    .guide-arrow {
+      bottom: -7px;
+      right: 50%;
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+  &.guide-tooltip-topLeft {
+    .guide-tip-pulsating-circle {
+      bottom: -32px;
+      left: 35px;
+    }
+    .guide-arrow {
+      bottom: -7px;
+      left: 35px;
+    }
+  }
+  &.guide-tooltip-topRight {
+    .guide-tip-pulsating-circle {
+      bottom: -32px;
+      right: 35px;
+    }
+    .guide-arrow {
+      bottom: -7px;
+      right: 35px;
+    }
+  }
+  &.guide-tooltip-bottomLeft {
+    .guide-tip-pulsating-circle {
+      top: -31px;
+      left: 20px;
+    }
+    .guide-arrow {
+      top: -8px;
+    }
+  }
+  &.guide-tooltip-bottomRight {
+    .guide-tip-pulsating-circle {
+      top: -31px;
+      right: 35px;
+    }
+    .guide-arrow {
+      top: -8px;
+      right: 35px;
+    }
+  }
+  &.guide-tooltip-bottom {
+    .guide-tip-pulsating-circle {
+      top: -31px;
+      right: 50%;
+      transform: translateX(-50%);
+    }
+    .guide-arrow {
+      top: -8px;
+      right: 50%;
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+}

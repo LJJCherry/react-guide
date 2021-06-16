@@ -1,0 +1,40 @@
+// guide-circle
+.guide-tip-pulsating-circle {
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  .guide-tip-pulsating-outer {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    opacity: 0.3;
+    animation: pulse 0.8s ease-in-out 0.8s infinite alternate;
+  }
+  .guide-tip-pulsating-inner {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    // background: #1890ff;
+  }
+} 
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+  
