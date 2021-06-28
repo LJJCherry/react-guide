@@ -26,5 +26,5 @@
   },
   "devDependencies": {
     "father": "^2.18.3"
-  },
+  }
 }
