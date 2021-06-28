@@ -32,20 +32,6 @@ class GuideFlow extends PureComponent {
     setTimeout(() => {
       this.onStepChange(0);
     }, this.props.timeout);
-    // 轮询查看页面元素的位置信息
-    // this.interval = setInterval(() => {
-    //   const { index } = this.state;
-    //   this.timer += 1;
-    //   console.log('this.timer', this.timer);
-    //   if (this.timer === 10) {
-    //     clearInterval(this.interval);
-    //   }
-    //   console.log(this.state.index, !deepEqual(this.getDomInfo(this.steps[index]), this.domArray[index]));
-    //   if (!deepEqual(this.getDomInfo(this.steps[index]), this.domArray[index]) && index === 0) {
-    //     this.onStepChange(0);
-    //     this.domArray = this.getGuideDomInfo();
-    //   }
-    // }, 300);
     // 监听窗口变化
     window.addEventListener('resize', this.onResizeWindow, false);
   }
@@ -63,7 +49,6 @@ class GuideFlow extends PureComponent {
   }
 
   componentWillUnmount() {
-    // clearInterval(this.interval);
     window.removeEventListener('resize', this.onResizeWindow, false);
   }
 

@@ -1,6 +1,6 @@
 {
   "name": "react-comp-guide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "B端引导组件",
   "main": "lib/index.js",
   "module": "dist/index.esm.js",
