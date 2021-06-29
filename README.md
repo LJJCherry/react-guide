@@ -131,7 +131,7 @@ steps的配置项
 | icon | Icon url | string url |  |  |
 
 ### GuideFlowWithoutMask
-没有遮罩和高亮效果的引导，配合麦座亚运会需求的引导，交互稿链接：[链接](https://done.alibaba-inc.com/file/EMZG4dlPyg2S/q8BqltpvKCJqBq0f/preview?aid=61D856EA-FBE2-4744-9AB4-96110DA8FD42)
+没有遮罩的引导
 
 #### 用法
 ```javascript
