@@ -201,7 +201,7 @@ steps的配置项
 ## 单点引导
 GuideTip 和 GuideTipWithCircle 这两个组件的区别是 GuideTipWithCircle 带有高亮圆点，而GuideTip没有；
 ### 1、GuideTip
-> 这个组件新的antd版本也有，可配置背景颜色，云智项目用的antd2的版本没有
+> 这个组件新的antd版本也有，可配置背景颜色，antd2的版本没有
 
 ### 2、GuideTipWithCircle
 ### 用法：
