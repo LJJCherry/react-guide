@@ -276,7 +276,7 @@ createFunctionalComponent(TestModal, {
 ### GuideStorage
 很多的引导组件如果没有后端的支持都会存在本地浏览器的localstorage，用于控制显示隐藏，GuideStorage就是用来保存所有的引导组件的状态的一个localstorage, 保证系统的一致性；
 ```javascript
-import { GuideTipWithCircle, GuideStorage } from '@ali/lark-guide';
+import { GuideTipWithCircle, GuideStorage } from 'react-comp-guide';
 
 this.guideStore = new GuideStorage();
 // 设置一个tip的状态
