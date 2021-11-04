@@ -10,7 +10,7 @@
 ### 1、GuideModal
 #### 用法：
 ```javascript
-import { GuideModal, createFunctionalComponent }  from '@ali/lark-guide';
+import { GuideModal, createFunctionalComponent }  from 'react-comp-guide';
 
 createFunctionalComponent(GuideModal, {
   title: ['财富功能已上线', '在线记账更方便'],
@@ -37,7 +37,7 @@ createFunctionalComponent(GuideModal, {
 ### 2、NotifyModal
 #### 用法：
 ```javascript
-import { NotifyModal, createFunctionalComponent }  from '@ali/lark-guide';
+import { NotifyModal, createFunctionalComponent }  from 'react-comp-guide';
 
 createFunctionalComponent(NotifyModal, {
   title: '总部端换装成功，快去看看',
@@ -66,7 +66,7 @@ createFunctionalComponent(NotifyModal, {
 
 #### 用法
 ```javascript
-import { GuideFlow, createFunctionalComponent } from '@ali/lark-guide';
+import { GuideFlow, createFunctionalComponent } from 'react-comp-guide';
 const steps = [
   {
     selector: '#first-step', // 在需要引导的html中加上id,或者classname
@@ -135,7 +135,7 @@ steps的配置项
 
 #### 用法
 ```javascript
-import { GuideFlowWithoutMask, createFunctionalComponent } from '@ali/lark-guide';
+import { GuideFlowWithoutMask, createFunctionalComponent } from 'react-comp-guide';
 const steps = [
   {
     selector: '#first-step', // 在需要引导的html中加上id,或者classname
@@ -206,7 +206,7 @@ GuideTip 和 GuideTipWithCircle 这两个组件的区别是 GuideTipWithCircle �
 ### 2、GuideTipWithCircle
 ### 用法：
 ```javascript
-import { GuideTip，GuideTipWithCircle }  from '@ali/lark-guide';
+import { GuideTip，GuideTipWithCircle }  from 'react-comp-guide';
 
 ReactDOM.render(
   <div>
